@@ -1,7 +1,13 @@
-# README
+# QuoteAPI
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+QuoteAPI is a sample api Rails application.
+
+Things to do:
+
+* Update this README with everything below.
+* Create a basic view option for admins
+
+
 
 Things you may want to cover:
 
