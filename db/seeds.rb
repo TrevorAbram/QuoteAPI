@@ -1,7 +1,28 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Seeding the db with fake data using the Faker Gem.
+
+# First create a class called Seed.
+
+require 'faker'
+
+class Seed
+  def self.begin
+    seed = Seed.New
+    seed.generate_quotes
+  end
+
+# Then create an to pull the fake quotes and display them.
+
+  def generate_quotes
+    20.times do |i|
+      author =
+      quote = Quote.create! (
+        author (Faker::TvShows::RickAndMorty.character)
+        content (Faker::TvShows::RickAndMorty.quote)
+      )
+
+      puts ("Quote #{i}: The author is #{quote.author} and the quote is '#{quote.content}'.")
+    end
+  end
+end
+
+Seed.begin

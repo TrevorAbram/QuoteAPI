@@ -12,4 +12,10 @@ class QuotesController < ApplicationController
     # Could also list 200 as status code. Changing to 401 for example will perform a successful, but unauthorized call.
     render json: object, status: :ok
   end
+
+
+  def quote_params
+    params.permit(:author, :content)
+
+  end
 end
