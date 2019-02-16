@@ -33,9 +33,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 
 # New gems
-gem 'faker', '~> 1.6', '>= 1.6.6'
-
-
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+gem 'rb-readline'
 
 
 

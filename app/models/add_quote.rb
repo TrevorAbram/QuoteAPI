@@ -1,2 +1,0 @@
-class AddQuote < ApplicationRecord
-end
