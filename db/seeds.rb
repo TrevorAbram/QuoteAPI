@@ -18,7 +18,9 @@
 #   end
 # end
 
-20.times do |i|
-    Quote.create! ({author: Faker::Book.author, content: Faker::ChuckNorris.fact})
-    p "Quote #{i}: Author is #{quote.author} and quotation is '#{quote.content}'."
+20.times do
+    Quote.create!({
+      author: Faker::Book.author,
+      content: Faker::ChuckNorris.fact
+      })
 end
